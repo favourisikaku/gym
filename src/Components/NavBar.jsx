@@ -10,31 +10,23 @@ const NavBar = () => {
       <div className="nav-container">
         <nav className="navbar navbar-light bg-light fixed-top">
           <div className="container">
-            <Link reloadDocument to="/">
+            <Link to="/">
               <img src="/images/logo.png" className="img-fluid nav-logo" />
             </Link>
             <div className="nav-text">
               <ul className="nav-text-middle">
                 <li className={pathname === "/" ? "active" : ""}>
-                  <Link reloadDocument to="/">
-                    Home
-                  </Link>
+                  <Link to="/">Home</Link>
                 </li>
                 <li className={pathname === "/about" ? "active" : ""}>
-                  <Link reloadDocument to="/about">
-                    About
-                  </Link>
+                  <Link to="/about">About</Link>
                 </li>
                 <li className={pathname === "/news" ? "active" : ""}>
-                  <Link reloadDocument to="/news">
-                    News
-                  </Link>
+                  <Link to="/news">News</Link>
                 </li>
 
                 <li className={pathname === "/contact" ? "active" : ""}>
-                  <Link reloadDocument to="/contact">
-                    Contact Us
-                  </Link>
+                  <Link to="/contact">Contact Us</Link>
                 </li>
               </ul>
             </div>
@@ -67,12 +59,7 @@ const NavBar = () => {
                     className={`nav-item ${pathname === "/" ? "active" : ""}`}
                     data-bs-dismiss="offcanvas"
                   >
-                    <Link
-                      reloadDocument
-                      className="nav-link"
-                      aria-current="page"
-                      to="/"
-                    >
+                    <Link className="nav-link" aria-current="page" to="/">
                       Home
                     </Link>
                   </li>
@@ -82,7 +69,7 @@ const NavBar = () => {
                     }`}
                     data-bs-dismiss="offcanvas"
                   >
-                    <Link reloadDocument className="nav-link" to="/about">
+                    <Link className="nav-link" to="/about">
                       About
                     </Link>
                   </li>
@@ -92,7 +79,7 @@ const NavBar = () => {
                     }`}
                     data-bs-dismiss="offcanvas"
                   >
-                    <Link reloadDocument className="nav-link" to="/news">
+                    <Link className="nav-link" to="/news">
                       News
                     </Link>
                   </li>
@@ -103,7 +90,7 @@ const NavBar = () => {
                     }`}
                     data-bs-dismiss="offcanvas"
                   >
-                    <Link reloadDocument className="nav-link" to="/contact">
+                    <Link className="nav-link" to="/contact">
                       Contact Us
                     </Link>
                   </li>
