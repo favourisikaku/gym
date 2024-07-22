@@ -519,9 +519,7 @@ li {
     height: 50vh;
     background-position: center;
   }
-  .section1-home-img p {
-    display: none;
-  }
+
   .section1-home-img .text-center {
     margin-top: 15%;
   }
