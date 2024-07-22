@@ -1,0 +1,967 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+html {
+  font-size: 14px;
+  overflow-x: hidden;
+}
+.container {
+  overflow-y: hidden;
+}
+
+.nav-container {
+  margin-bottom: 5%;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+.navbar {
+  padding: 20px 0px;
+}
+.navbar-toggler {
+  display: none;
+}
+
+.navbar .nav-text {
+  margin-top: 1%;
+}
+.navbar .nav-text-middle {
+  width: 500px;
+  display: flex;
+  /* margin-left: -60%; */
+  justify-content: space-between;
+}
+.nav-text-middle a {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333333;
+  text-transform: uppercase;
+  transition: 0.3s ease-in;
+}
+.offcanvas-body a {
+  text-transform: uppercase;
+  transition: 0.3s ease-in;
+  font-weight: 600;
+  margin-bottom: 2%;
+}
+.nav-text-middle a:hover,
+.offcanvas-body a:hover {
+  color: #fb5b21;
+  transition: 0.3s ease-in;
+}
+.nav-text-middle .active a,
+.offcanvas-body .active a {
+  color: #fb5b21;
+}
+.section1-home-img {
+  background-image: url("/public/images/slide1.jpg");
+  height: 100vh;
+
+  background-size: cover;
+
+  color: white;
+}
+.section1-home-img span {
+  color: #fb5b21;
+}
+.section1-home-img p {
+  width: 80%;
+}
+.section1-home-img button {
+  padding: 15px 25px;
+  border-radius: 30px;
+  background-color: transparent;
+  color: white;
+  font-weight: 600;
+  border: 1px solid #fb5b21;
+}
+.home-section2-header i {
+  color: #fb5b21;
+  font-size: 30px;
+}
+.home-section2 {
+  background-color: #fb5b21;
+  color: white;
+  position: relative;
+}
+.home-section2 span {
+  font-weight: bold;
+}
+.home-section2 img {
+  margin-left: 30%;
+}
+.home-section2 h1 {
+  position: absolute;
+  margin-top: -40%;
+  text-align: center;
+  font-size: 55px;
+
+  margin-left: 50%;
+}
+.home-section3 .card-body {
+  width: 370px;
+  position: relative;
+}
+.home-section3 .card-body img {
+  width: 370px;
+}
+.about-fitness-details {
+  padding: 70px 30px;
+}
+.about-fitness-details-weight h2 {
+  margin-left: -1% !important;
+}
+.about-fitness-details-weight p {
+  margin-left: -1% !important;
+}
+.about-fitness-details h2,
+.about-fitness-details p {
+  padding: 0 5%;
+}
+.card-time h6:nth-child(2) {
+  position: absolute;
+  margin-top: -9%;
+  color: white;
+  padding: 7px;
+  background-color: #ff723f;
+}
+.card-time h6:nth-child(1) {
+  position: absolute;
+  margin-left: 15%;
+  background-color: white;
+  padding: 7px 18px;
+  margin-top: -9%;
+}
+.home-section3 .card-details {
+  background-color: #f5f5f5;
+}
+.card-body:hover .card-details {
+  background-color: #ff723f;
+  transition: 0.5s;
+}
+
+.workout-list {
+  display: flex;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+  position: relative;
+}
+
+.swipe-indicator {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  animation: fadeInOut 2s infinite;
+  color: #fb5b21;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.workout-list::-webkit-scrollbar {
+  display: none;
+}
+.home-section4 img {
+  width: 370px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.home-section4 .d-flex {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.home-section5 .card-body {
+  width: 370px;
+  position: relative;
+}
+.home-section5 .card-body img {
+  width: 370px;
+}
+.home-section5 .news-card-body .image,
+.news-list .image {
+  overflow: hidden;
+}
+.home-section5 .news-card-body img {
+  transition: 0.5s ease-in-out;
+}
+.home-section5 .news-card-body img:hover {
+  transform: scale(1.1);
+  transition: 0.5s ease-in-out;
+}
+.being-body {
+  padding-top: 15%;
+  margin-left: -10%;
+}
+.being-body h2 {
+  font-size: 100px;
+  font-weight: bold;
+}
+.being-body span {
+  color: #fb5b21;
+}
+.being-body p {
+  font-size: 50px;
+  letter-spacing: 62px;
+  color: #b3b3b3;
+}
+.contact-btn button {
+  width: 100% !important;
+}
+.counter-header {
+  background-image: url("/public/images/counter-back.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 350px;
+}
+.counter-header::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.counter-details {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  height: 330px;
+}
+.counter-details h1 {
+  color: white;
+  font-weight: 600;
+}
+.counter-details p {
+  color: #fb5b21;
+}
+.footer-container {
+  background-color: #121212;
+  color: #b3b3b3;
+  padding-top: 5%;
+}
+.footer-container h3 {
+  color: white;
+}
+.footer-container span {
+  color: #fb5b21;
+}
+.footer-container .copyright {
+  margin-top: 5%;
+}
+.corporate-office-header-details p {
+  margin-bottom: 0;
+}
+.news-details-trainer p {
+  margin-bottom: 0;
+}
+.corporate-office-header-details i {
+  color: #fb5b21;
+  margin-right: 3%;
+}
+
+.socials i {
+  background-color: #fb5b21;
+  font-size: 18px;
+  height: 36px;
+  width: 36px;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  color: #f5f5f5;
+}
+
+.copyright-header {
+  background-color: #333333;
+}
+.copyright {
+  text-align: center;
+  padding: 1% 0;
+}
+.pricing-section {
+  background-color: #121212;
+}
+.pricing-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pricing-header {
+  background-color: #f5f5f5;
+  text-align: center;
+  margin-top: 3%;
+  margin-bottom: 8%;
+  transition: 0.2s ease-in;
+}
+.pricing-header:hover {
+  transform: scaleY(1.02);
+  transition: 0.2s ease-in;
+}
+.pricing-header h5 {
+  font-weight: 600;
+  letter-spacing: 4px;
+}
+.pricing-header h1 {
+  color: #fb5b21;
+  font-weight: 600;
+  font-size: 40px;
+}
+.pricing-header span {
+  color: #b3b3b3;
+  font-size: 20px;
+  font-weight: 600;
+}
+.pricing-header button {
+  padding: 15px 25px;
+  border-radius: 30px;
+  background-color: transparent;
+  color: black;
+  border: 2px solid #fb5b21;
+  transition: 0.3s ease-in;
+}
+.pricing-header button:hover {
+  padding: 15px 25px;
+  border-radius: 30px;
+  background-color: #fb5b21;
+  color: white;
+  transition: 0.3s ease-in;
+}
+.about-banner {
+  background-image: url("/public/images/about-banner.jpg");
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+.about-details h2 {
+  border-bottom: 4px solid #fb5b21;
+  width: 70px;
+  margin-bottom: 4%;
+}
+.about-details i {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fb5b21;
+  color: #f5f5f5;
+  border-radius: 15px;
+}
+.about-details span:nth-child(1) {
+  color: #fb5b21;
+}
+.about-details span:nth-child(2) {
+  color: #b3b3b3;
+}
+.about-section2 {
+  background-image: url("/public/images/choose-bag.jpg");
+  color: white;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.about-section2 .row {
+  display: flex;
+  align-items: center;
+}
+.about-section2 .counter-image-header {
+  display: flex;
+}
+
+.about-section2 .counter-image .details1 {
+  margin-top: -9%;
+  position: absolute;
+  margin-left: 3%;
+  text-align: center;
+}
+.about-section2 .counter-image .details2 {
+  margin-top: -9%;
+  position: absolute;
+  margin-left: 4%;
+  text-align: center;
+}
+.about-section2 .counter-image span {
+  font-size: 18px;
+}
+.trainer-section {
+  background-image: url("/public/images/trainer-bag.jpg");
+  background-position: center;
+}
+.trainer-header-section {
+  flex-wrap: nowrap;
+
+  display: flex;
+  overflow-x: scroll;
+}
+.trainer-header-section::-webkit-scrollbar {
+  display: none;
+}
+.trainer-header {
+  background-color: #f5f5f5;
+  margin-right: 2%;
+  text-align: center;
+  border-radius: 20px;
+
+  margin-top: 3%;
+  margin-bottom: 8%;
+
+  transition: 0.2s ease-in;
+}
+.trainer-header .details {
+  padding: 10px 0px;
+  border-radius: 30px;
+  margin: auto;
+  width: 290px;
+  background-color: #fb5b21;
+  color: white;
+  font-weight: 600;
+}
+.news-details-border {
+  border: 1px solid #b3b3b3;
+  margin: 3% 0;
+}
+.news-list {
+  margin-top: 8%;
+  justify-content: center;
+  /* text-align: center; */
+}
+.news-list .image img {
+  transition: 0.5s ease-in-out;
+}
+.news-list .news-card-body {
+  position: relative;
+}
+.news-list .date {
+  position: absolute;
+  margin-left: 5%;
+  margin-top: -3%;
+  z-index: 1;
+}
+
+.news-list .date p {
+  position: absolute;
+  margin-left: 5%;
+  margin-top: -90%;
+  font-weight: 600;
+
+  color: #f5f5f5;
+
+  text-align: center;
+}
+.news-list .image img:hover {
+  transform: scale(1.2);
+  transition: 0.5s ease-in-out;
+}
+.news-list button {
+  padding: 10px 25px;
+  border-radius: 30px;
+  color: #fb5b21;
+  border: 1px solid #fb5b21;
+  background-color: white;
+  transition: 0.3s ease-in;
+}
+.news-list button:hover {
+  background-color: #fb5b21;
+  color: white;
+  transition: 0.3s ease-in;
+}
+
+@media (min-width: 200px) and (max-width: 426px) {
+  .navbar {
+    padding: 10px 0px;
+  }
+  .navbar-toggler {
+    display: block;
+  }
+  .nav-logo {
+    margin-top: 3%;
+    width: 120px;
+  }
+  .navbar .nav-text {
+    display: none;
+  }
+  .section1-home-img {
+    height: 50vh;
+    background-position: center;
+  }
+  .section1-home-img p {
+    display: none;
+  }
+  .section1-home-img .text-center {
+    margin-top: 15%;
+  }
+  .home-section2-header {
+    margin-right: 0 !important;
+  }
+
+  .home-section2 img {
+    margin-left: 0;
+  }
+  .home-section2 h1 {
+    position: absolute;
+    margin-top: -50%;
+    text-align: center;
+    font-size: 35px;
+    margin-left: 40%;
+  }
+  .about-fitness-details-header {
+    display: block !important;
+  }
+  .about-fitness-details-header i {
+    margin-bottom: 3%;
+  }
+  .about-fitness-details {
+    text-align: center;
+    padding-top: 10%;
+  }
+  .about-fitness-details p {
+    margin-bottom: 15%;
+  }
+  .about-fitness-details h2,
+  .about-fitness-details p {
+    padding: 0 5%;
+  }
+  .workout-list {
+    justify-content: start !important;
+  }
+  .workout-list .card-details div {
+    text-align: center;
+    margin-left: 0 !important;
+  }
+  .home-section3 .card-body {
+    width: 100vw;
+    position: relative;
+  }
+  .home-section3 .card-body img {
+    width: 100vw;
+  }
+  .being-body-container {
+    padding-top: 50px !important;
+  }
+  .being-body {
+    margin-left: 0%;
+    padding-top: 5%;
+    text-align: center;
+  }
+  .being-body h2 {
+    font-size: 40px;
+  }
+  .being-body p {
+    font-size: 25px;
+    letter-spacing: 0;
+  }
+  .home-section4 img {
+    /* margin-right: 0; */
+  }
+  .counter-details {
+    padding-top: 7%;
+  }
+  .workout-list .news-card-body {
+    width: 100vw;
+    text-align: center;
+  }
+  .about-banner {
+    height: 40vh;
+    background-size: 100% 100%;
+  }
+  .about-banner h1 {
+    font-size: 30px !important;
+  }
+  .about-details {
+    margin-top: 0 !important;
+  }
+  .about-section2 {
+    background-size: cover;
+    padding-bottom: 15%;
+  }
+  .about-section2 h2 {
+    margin-top: 10%;
+    font-size: 24px;
+  }
+  .about-section2 p {
+    line-height: 1.7;
+    margin-bottom: 15%;
+  }
+  .about-section2 .counter-image .details1 {
+    /* margin-top: -34%; */
+    width: 34vw;
+    margin: -33% 5%;
+  }
+  .about-section2 .counter-image .details2 {
+    margin-top: -33%;
+    width: 34vw;
+    margin-left: 5%;
+  }
+  .trainer-header {
+    margin-bottom: 20%;
+  }
+  .footer-container {
+    text-align: center;
+  }
+  .about-company {
+    margin-top: 5%;
+  }
+  .corporate-office-header {
+    margin-top: 5%;
+  }
+  .copyright-header {
+    padding-bottom: 1%;
+    padding-top: 1%;
+  }
+  .news-list {
+    text-align: center;
+  }
+  .news-list .news-card-body:nth-child(1) {
+    margin-top: 10%;
+  }
+  .news-details-header-image {
+    padding-top: 4% !important;
+  }
+  .news-details-border {
+    margin: 10% 0;
+  }
+  .comments-details {
+    display: block !important;
+  }
+  .comments-details .image-header {
+    width: 100% !important;
+    margin-bottom: 8%;
+  }
+  .comments-details .ms-4 {
+    margin-left: auto !important;
+  }
+  .news-details-section {
+    padding-bottom: 0px !important;
+  }
+}
+@media (min-width: 427px) and (max-width: 768px) {
+  .navbar {
+    padding: 10px 0px;
+  }
+  .navbar-toggler {
+    display: block;
+  }
+  .nav-logo {
+    margin-top: 3%;
+    width: 120px;
+  }
+  .navbar .nav-text {
+    display: none;
+  }
+  .section1-home-img {
+    height: 50vh;
+    background-position: center;
+  }
+
+  .home-section2-header {
+    margin-right: 0 !important;
+  }
+
+  .home-section2 img {
+    margin-left: 0;
+    padding-top: 48%;
+  }
+  .home-section2 h1 {
+    position: absolute;
+    margin-top: -50%;
+    text-align: center;
+    font-size: 40px;
+    margin-left: 40%;
+  }
+  .about-fitness-details {
+    padding: 30px 30px;
+  }
+  /* .about-fitness-details p {
+    margin-bottom: 15%;
+  } */
+  /* .about-fitness-details h2,
+  .about-fitness-details p {
+    padding: 0 5%;
+  } */
+
+  .home-section3 .card-body {
+    width: 370px;
+    position: relative;
+  }
+
+  .being-body-container {
+    padding-top: 50px !important;
+  }
+  /* .being-body {
+    margin-left: 0%;
+    padding-top: 5%;
+    text-align: center;
+  } */
+  .being-body h2 {
+    font-size: 50px;
+  }
+  .being-body p {
+    font-size: 25px;
+    letter-spacing: 30px;
+  }
+  .home-section4 img {
+    /* margin-right: 0; */
+  }
+  .counter-details {
+    padding-top: 7%;
+  }
+  .workout-list {
+    justify-content: start !important;
+  }
+  .workout-list .news-card-body {
+    width: 100%;
+    text-align: center;
+  }
+  .about-banner {
+    height: 40vh;
+    background-size: 100% 100%;
+  }
+  .about-banner h1 {
+    font-size: 35px !important;
+  }
+  .about-details {
+    /* margin-top: 0 !important; */
+  }
+  .about-details h1 {
+    font-size: 34px;
+  }
+  .about-section2 {
+    background-size: cover;
+    /* padding-bottom: 15%; */
+  }
+  .about-section2 h2 {
+    margin-top: 10%;
+    font-size: 35px;
+  }
+  .about-section2 p {
+    line-height: 1.7;
+    margin-bottom: 15%;
+  }
+  .about-section2 .counter-image .details1 {
+    margin-top: -14%;
+
+    /* width: 34vw; */
+    padding-left: 1%;
+    margin-left: 1px;
+  }
+  .about-section2 .counter-image .details2 {
+    margin-top: -14%;
+    /* width: 34vw; */
+    padding-left: 1%;
+    margin-left: 2%;
+  }
+  .trainer-header {
+    margin-bottom: 20%;
+  }
+  .trainer-header .details {
+    margin: auto;
+    width: auto;
+  }
+  .pricing-header h1 {
+    font-size: 40px;
+  }
+  .home-section4 img {
+    width: 330px;
+  }
+  .home-section4 .d-flex {
+    flex-wrap: wrap;
+    /* justify-content: start; */
+  }
+  .counter-header .counter-details h1 {
+    font-size: 35px;
+  }
+  .counter-header .counter-details p {
+    font-size: 20px;
+  }
+
+  .about-company {
+    margin-top: 5%;
+  }
+  .corporate-office-header {
+    margin-top: 5%;
+  }
+  .copyright-header {
+    padding-bottom: 1%;
+    padding-top: 1%;
+    font-size: 17px;
+  }
+
+  .news-details-header-image {
+    padding-top: 4% !important;
+  }
+  .news-details-border {
+    margin: 5% 0;
+  }
+  .news-details-section p {
+    font-size: 16px;
+  }
+  /* .comments-details {
+    display: block !important;
+  } */
+  .comments-details .image-header {
+    margin-right: 5%;
+    margin-bottom: 8%;
+  }
+
+  .comments-details .image-header img {
+    max-width: 100px !important;
+  }
+  .comments-details .ms-4 {
+    margin-left: 2% !important;
+  }
+  .news-details-section {
+    padding-bottom: 0px !important;
+  }
+}
+@media (min-width: 769px) and (max-width: 1025px) {
+  html {
+    font-size: 17px;
+  }
+  .home-section2 img {
+    margin-left: 0;
+    padding-top: 25%;
+  }
+  .home-section2 h1 {
+    position: absolute;
+    margin-top: -50%;
+    text-align: center;
+    font-size: 45px;
+    margin-left: 40%;
+  }
+  .about-fitness-details {
+    padding: 50px 30px;
+  }
+  /* .about-fitness-details p {
+    margin-bottom: 15%;
+  } */
+  .about-fitness-details h2,
+  .about-fitness-details p {
+    padding: 0 5%;
+  }
+
+  .being-body-container {
+    padding-top: 50px !important;
+  }
+
+  .being-body h2 {
+    font-size: 70px;
+  }
+  .being-body p {
+    font-size: 27px;
+  }
+  .home-section4 img {
+    /* margin-right: 0; */
+  }
+  .counter-details {
+    padding-top: 7%;
+  }
+  .workout-list {
+    justify-content: start !important;
+  }
+  .workout-list .news-card-body {
+    width: 100%;
+    text-align: center;
+  }
+  .about-banner {
+    height: 40vh;
+    background-size: 100% 100%;
+  }
+  .about-banner h1 {
+    font-size: 35px !important;
+  }
+  .about-details {
+    /* margin-top: 0 !important; */
+  }
+  .about-details h1 {
+    font-size: 34px;
+  }
+  .about-section2 {
+    background-size: cover;
+    /* padding-bottom: 15%; */
+  }
+  .about-section2 h2 {
+    margin-top: 10%;
+    font-size: 35px;
+  }
+  .about-section2 p {
+    line-height: 1.7;
+    margin-bottom: 15%;
+  }
+  .about-section2 .counter-image .details1 {
+    margin-top: -14%;
+
+    /* width: 34vw; */
+    padding-left: 1%;
+    margin-left: 12px;
+  }
+  .about-section2 .counter-image .details2 {
+    margin-top: -14%;
+    /* width: 34vw; */
+    padding-left: 1%;
+    margin-left: 25px;
+  }
+  .trainer-header {
+    margin-bottom: 20%;
+  }
+  .trainer-header .details {
+    margin: auto;
+    width: auto;
+  }
+
+  .about-company {
+    margin-top: 5%;
+  }
+  .corporate-office-header {
+    margin-top: 5%;
+  }
+  .copyright-header {
+    padding-bottom: 1%;
+    padding-top: 1%;
+    font-size: 17px;
+  }
+  .follow-us {
+    margin-top: 5%;
+  }
+  .news-details-header-image {
+    padding-top: 4% !important;
+  }
+  .news-details-header-image img {
+    width: 100%;
+  }
+
+  .comments-details .image-header img {
+    max-width: 100px !important;
+  }
+
+  .news-details-section {
+    padding-bottom: 0px !important;
+  }
+}
